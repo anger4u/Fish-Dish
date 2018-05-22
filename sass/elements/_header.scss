@@ -1,0 +1,47 @@
+header {
+	background-color: $brown;
+	border: 1px solid $yellow;
+	border-right: none;
+	border-left: none;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	& .container {
+		height: 53px;
+		& .logo {
+			font-size: 30px;
+			font-family: $rosa;
+			color: $yellow;
+		}
+
+		& .nav-menu {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			&_list {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				flex: 1;
+				& li {
+					display: inline-block;					
+				}	
+			}
+			&_social-links {
+				margin-left: 20px;
+				& li {
+					display: inline-block;	
+					margin-left: 15px;					
+					& a {
+						width: 20px;
+						height: 20px;
+						display: inline-block;
+					}
+				}
+			}	
+		}
+	}	
+}
+
+

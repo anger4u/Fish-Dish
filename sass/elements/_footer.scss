@@ -1,0 +1,33 @@
+footer {
+	background-color: $brown;
+	border: 1px solid $yellow;
+	border-right: none;
+	border-left: none;
+	top: 0px;
+	z-index: 100;
+	& .container {
+		height: 53px;
+		& .copyright {
+			font-size: 13px;
+			color: $yellow;
+		}
+
+		& .nav-menu {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			&_list {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				flex: 1;
+				& li {
+					display: inline-block;					
+				}	
+			}
+		}
+	}	
+}
+
+

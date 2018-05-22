@@ -1,0 +1,313 @@
+
+
+/*MENU SLIDER STYLE START*/
+.menu,.men,.men2,.dishes,.slider-menu {
+	display: flex;
+}
+
+div.menu {
+	justify-content: center;
+	height: 770px;
+	background: url(../images/bg-menu.png) center center no-repeat;
+	background-size: cover;
+}
+
+.men,.men2 {
+	flex-flow: column wrap;
+	padding: 0;
+	align-items: center;
+}
+
+.men2 {
+	height: 84.7%;
+	margin: auto;
+	border-top: #ffdf78 1px solid;
+}
+
+.slider-menu {
+	width: 100%;
+	margin: 6% 0 0 0;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.menu-slider-left,.menu-slider-right {
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.menu-slider-left {
+	background-image: url(../images/arrow-left.png); 
+}
+
+.menu-slider-right {
+	background-image: url(../images/arrow-right.png); 
+}
+
+.menu-slider-left:hover {
+	background-image: url(../images/arrow-left-active.png);
+}
+
+.menu-slider-right:hover {
+	background-image: url(../images/arrow-right-active.png);
+}
+
+.slider-menu h2 {
+	margin: 0;
+}
+
+.men div.head-button {
+	width: 137px;
+}
+
+.dishes, .dishes2 {
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-height: 300px;
+	padding: 0;
+}
+
+.breakfast,.fish,.grill,.cold {
+	display: flex;
+	flex:1,2,100px;
+	max-width: 490px;
+	height: 236px;
+	padding: 0;
+}
+
+.men2 hr {
+	margin-bottom: 45px;
+}
+
+/*.breakfast {
+	order: -1;
+	margin-bottom: 20px;
+}
+
+.fish {
+	order: 2;
+	margin-bottom: 20px;
+}
+
+.grill {
+	order: 3;
+}
+
+.cold {
+	order: 4;
+}*/
+
+
+/*BOBY STYLE START*/
+
+.dishes-item-wrapper{
+	width: 97%;
+}
+
+	
+.dishes-item{
+	display: block;
+	width: 100%;
+}
+
+.dishes-item img,
+.dishes-item .alt-menu{
+	float: left;
+}
+
+.dishes-item img{
+	width: ;
+}
+
+.dishes-item .alt-menu{
+	display: block;
+}
+
+@media only screen and (max-width: 600px, min-width: 300px) {
+    body {
+        /*background-color: lightblue;*/
+    }
+}
+
+/*BOBY STYLE END*/
+
+.alt-menu {
+	background-color: #31241d;
+	display: flex;
+	padding: 25px 16px 0 16px;
+	flex-direction: column;
+	border: #ffdf78 1px solid;
+}
+
+.alt-menu hr {
+	margin: 20px 0 20px 0;
+	width: 100%;
+}
+
+.alt-menu p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.more {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.more-link {
+	background: url(../images/arrow-more.png) center right no-repeat;
+	padding-right: 15px;
+	font-size: 18px;
+}
+
+.more-link:hover {
+	background-image: url(../images/arrow-more-active.png);
+}
+
+
+
+/*NEWS SLYDER STYLE START*/
+.news,.new,.head-button,.new2,.slider-menu,.dishes2 {
+	display: flex;
+}
+
+div.news {
+	justify-content: center;
+	height: 635px;
+	background: url(../images/bg-leather.png) repeat;
+}
+
+.new,.new2 {
+	flex-flow: column wrap;
+	padding: 0;
+	align-items: center;
+}
+
+.new2 {
+	height: 81.5%;
+	margin: auto;
+	border-top: #ffdf78 1px solid;
+}
+
+.new> .head-button {
+	width: 136px;
+}
+
+.article1,.article2,.article3,.article4 {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	max-width: 230px;
+	padding: 0;
+}
+
+.article2,.article3,.article4 {
+	margin-left: 26px;
+}
+
+.date {
+	position: relative;
+	top: 203px;
+	width: 115px;
+	height: 25px;
+	font-size: 11px;
+	text-transform: none;
+}
+
+.more2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.more-link2 {
+	background: url(../images/arrow-more2.png) center right no-repeat;
+	padding-right: 15px;
+	color: black;
+}
+
+.alt-menu2 {
+	color: #141d31;
+	background-color: #fff;
+	display: flex;
+	padding: 20px 16px 0 16px;
+	flex-direction: column;
+}
+
+.alt-menu2 div>p:last-child{
+	font-size: 15px; 
+}
+
+.alt-menu2 div p {
+	line-height: 1.5;
+}
+
+
+/*MAP STYLE START*/
+.map,.contacts,.contacts,.contact-list,.list,figure {
+	display: flex;
+}
+
+div.map {
+	height: 457px;
+	background: url(../images/bg-map.png) center center no-repeat;
+	background-size: cover;
+}
+
+.contacts {
+flex-flow: row wrap;
+justify-content: flex-end;
+align-items: center;
+	
+}
+
+.contacts2 {
+	width: 50%;
+	flex-direction: column;
+}
+
+.contact-list {
+	margin: auto;
+	width: 362px;
+	height: 312px;
+	background-color:  #31241d;
+	opacity: 0.8;
+	border: #ffdf78 1px solid;
+}
+
+.conts {
+	width: 186px;
+	margin: auto;
+	position: relative;
+	top: 18px;
+	z-index: 100;
+}
+
+.list {
+	margin: auto;
+	width: 70%;
+	height: 70%;
+	flex-flow: column wrap;
+}
+
+figure {
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+figure:first-child {
+	margin-top: 10px;
+}
+
+figure p{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	margin-left: 25px;
+}

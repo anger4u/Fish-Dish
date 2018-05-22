@@ -1,0 +1,88 @@
+.menu-slider {
+	background-image: $menu-bg;	
+	background-repeat: no-repeat;
+	background-size: cover;
+	& .container {
+		padding: 80px 0 60px 0;
+		overflow: hidden;
+		& .row.menu-slider_row {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-top: 1px solid $yellow;
+			position: relative;
+			&::before {
+				content: "меню";
+				position: absolute;
+				top: -19px;
+				background-color: $brown;
+				width: 137px;
+				height: 36px;
+				text-align: center;
+				padding-top: 3px;
+				color: $yellow;
+				border: 1px solid $yellow;
+				text-transform: uppercase;
+			}
+			& h2 {
+				margin-top: 36px;
+				font-family: $rosa;
+			}
+			& hr {
+				margin: 20px 0 30px 0;
+			}
+
+// SLIDER MENU STYLE START
+			& .menu-slider_carousel {
+				& [class*='menu-slider_carousel-block'] {
+					& .col-md-12 {
+						display: flex;
+						flex-direction: row;
+						flex:1;
+						&:first-child {
+							padding-bottom: 10px;
+						}
+						&:last-child {
+							padding-top: 10px;
+						}
+					}
+					& img {
+						width: 50%;
+					}
+					& .menu-item_description {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						width: 50%;
+						background-color: $brown;
+						padding: 15px;
+						border: 1px solid $yellow;
+						& h3 {
+							text-transform: uppercase;
+							font-size: 16px;
+						}
+						& hr {
+							width: 100%;
+							margin: 10px 0;
+						}
+
+						& .more-link {
+							text-align: right;
+							& a {
+							color: $yellow;
+							font-family: $rosa;
+							font-size: 18px;
+							display: inline-block;
+								& i {
+									font-size: 14px;
+								}
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+}
+
+

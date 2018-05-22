@@ -1,0 +1,28 @@
+.description {
+	background-image: $grid-bg;
+	padding: 80px 0 60px 0;
+	& .col-md-12 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid $yellow;
+		padding: 0 75px 80px 75px;
+		&::before {
+			content: "о ресторане";
+			position: absolute;
+			top: -19px;
+			background-color: $brown;
+			width: 171px;
+			height: 36px;
+			text-align: center;
+			padding-top: 3px;
+			color: $yellow;
+			border: 1px solid $yellow;
+			text-transform: uppercase;
+		}
+		& h2 {
+			margin-top: 36px;
+			font-family: $rosa;
+		}
+	}
+}
